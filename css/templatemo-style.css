@@ -342,6 +342,10 @@ header {
 
 /* About Me Style */
 #aboutme {
+  padding-bottom: 40px;
+}
+
+#aboutme {
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -785,7 +789,6 @@ header {
   display: inline-block;
   text-align: center;
   width: 25%;
-  float: left;
   margin: 0;
   padding: 0;
 }
@@ -888,6 +891,7 @@ header {
 
 #contact {
   padding-top: 0px;
+  padding-bottom: 40px;
 }
 
 #contact-content {
