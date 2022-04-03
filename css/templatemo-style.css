@@ -59,10 +59,6 @@ p {
   margin-right: 50px;
 }
 
-.section-content {
-  text-align: left;
-}
-
 .section-heading em {
   font-style: normal;
   font-weight: 700;
@@ -76,6 +72,16 @@ p {
   color: #343434;
   position: absolute;
   top: 12.5px;
+}
+
+.section-content {
+  text-align: left;
+}
+
+.section-content em {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--theme-font-color);
 }
 
 .white-button a {
