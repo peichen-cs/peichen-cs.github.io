@@ -644,7 +644,6 @@ header {
 }
 
 
-
 /* Projects Style */
 
 #projects {
@@ -773,15 +772,15 @@ header {
 
 
 
-/* Blog Style */
+/* Research Style */
 
-#blog {
+#research {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
 }
 
-#blog .tabs {
+#research .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -791,7 +790,7 @@ header {
   border-bottom: 10px solid var(--theme-color);
 }
 
-#blog .tabs li {
+#research .tabs li {
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -799,7 +798,7 @@ header {
   padding: 0;
 }
 
-#blog .tabs a {
+#research .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -812,16 +811,16 @@ header {
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#research .tabs a:hover {
   color: var(--theme-color);
 }
 
 
-#blog .tabs .active:hover {
+#research .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#research .tabs .active {
   background-color: var(--theme-color);
   color: #fff;
 }
@@ -837,13 +836,13 @@ header {
   clear:both;
 }
 
-#blog .tabgroup ul {
+#research .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#research .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -851,23 +850,26 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#research .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
+#research .tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
+  max-height: 100%;
+  width: 30%;
+  height: 100%;
   overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+#research .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
+#research .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -877,7 +879,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
+#research .item .text-content span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -886,8 +888,146 @@ header {
   margin-bottom: 15px;
 }
 
-#blog .item .text-content .accent-button {
+#research .item .text-content .accent-button {
   margin-top: 25px;
+}
+
+
+/* education Style */
+
+#education {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #eee;
+}
+
+#education .section-heading {
+  margin-right: 20%;
+}
+
+#education .content-section {
+  display: inline-block;
+  position: relative;
+}
+
+#education .owl-dots {
+  margin-top: 40px;
+}
+
+#education .owl-dots .owl-dot span  {
+  width: 12px;
+  height: 12px;
+  background-color: #cdcdcd!important;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+#education .owl-dots .active span {
+  background-color: var(--theme-color);
+}
+
+#education .owl-dots button {
+  outline: none;
+}
+
+#education .owl-nav {
+  position: absolute;
+  display: inline-block;
+  top: -110px;
+  right: 0;
+}
+
+#education .owl-nav button:focus {
+  outline: none;
+}
+
+#education .owl-nav .owl-prev span {
+  margin-right: 10px;
+}
+
+#education .owl-nav .owl-next span, #education .owl-nav .owl-prev span {
+  outline: none;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 42px;
+  background-color: #eee;
+  color: #232323;
+  font-size: 42px;
+  transition: all 0.5s;
+}
+
+#education .owl-nav span:hover {
+  background-color: var(--theme-color);
+  color: #fff;
+}
+
+#education .item {
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+#education .item .image {
+  position: relative;
+}
+
+#education .item .image img {
+  width: 50%;
+  overflow: hidden;
+}
+
+#education .item .image .education-button a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--theme-color);
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: 9;
+  bottom: -44px;
+  opacity: 0;
+}
+
+#education .item:hover .education-button a {
+  bottom: 0;
+  opacity: 1;
+}
+
+#education .item .text-content {
+  padding-top: 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+#education .item .text-content h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #232323;
+  letter-spacing: 0.5px;
+}
+
+#education .item .text-content span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7a7a7a;
+  letter-spacing: 0.5px;
+  margin-bottom: 12.5px;
 }
 
 
@@ -959,6 +1099,67 @@ header {
   background-color: #f4f4f4;
 }
 
+
+/* Miscellaneous Style */
+#miscellaneous {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+}
+
+#miscellaneous .tabs {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  height: 90px;
+  width: 100%;
+  background-color: #eee;
+  border-bottom: 10px solid var(--theme-color);
+}
+
+#miscellaneous .tabs li {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+}
+
+#miscellaneous .tabs a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-size: 19px;
+  line-height: 80px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: var(--theme-color);
+}
+
+#miscellaneous .item .text-content h4 {
+  padding-top: 7.5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 600;
+  color: #232323;
+  letter-spacing: 0.5px;
+}
+
+#miscellaneous .item .text-content span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7a7a7a;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+#miscellaneous .item .text-content .accent-button {
+  margin-top: 25px;
+}
 
 
 /* Footer Style */
@@ -1092,6 +1293,18 @@ header {
     right: 0;
   }
 
+  #education {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #education .owl-nav {
+    position: absolute;
+    display: inline-block;
+    top: -220px;
+    right: 0;
+  }
+
   #projects {
     padding-left: 15px;
     padding-right: 15px;
@@ -1102,25 +1315,30 @@ header {
     padding-right: 15px;
   }
 
-  #blog {
+  #research {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #blog .tabs a {
+  #research .tabs a {
     font-size: 13px;
   }
 
-  #blog .tabgroup ul li img {
+  #research .tabgroup ul li img {
     float: none;
     width: 100%;
     margin-bottom: 15px;
   }
-  #blog .tabgroup ul li .text-content {
+  #research .tabgroup ul li .text-content {
     display: block;
   }
 
   #contact-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #miscellaneous {
     padding-left: 15px;
     padding-right: 15px;
   }

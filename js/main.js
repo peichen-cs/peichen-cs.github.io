@@ -91,8 +91,8 @@ jQuery(document).ready(function($) {
             contentSection.each(function(){
                 var sectionName = $(this).attr('id');
                 var navigationMatch = $('nav a[href="#' + sectionName + '"]');
-                if( ($(this).offset().top - $(window).height()*0.02 < $(window).scrollTop()) &&
-                      ($(this).offset().top + $(this).height() - $(window).height()*0.02 > $(window).scrollTop()))
+                if( ($(this).offset().top - $(window).height()*0.2 < $(window).scrollTop()) &&
+                      ($(this).offset().top + $(this).height() - $(window).height()*0.2 > $(window).scrollTop()))
                     {
                         navigationMatch.addClass('active-section');
                     }
