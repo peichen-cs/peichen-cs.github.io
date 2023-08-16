@@ -228,7 +228,7 @@ header {
 .sidebar-navigation {
   width: 20%;
   left: 0%;
-  float: right;
+  float: left;
   height: 100%;
   position: fixed;
   background-color: var(--theme-color);
