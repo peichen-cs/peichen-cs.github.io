@@ -122,7 +122,7 @@
       </div>
       <div class="section-content">
         <p>
-          I am a senior engineer in Huawei Cloud Computing Technology Ltd, Beijing. 
+          I am a senior software engineer in Huawei Cloud Computing Technology Ltd, Beijing. 
           I am working on improving metadata performance of file and object storage systems in cloud computing.
         </p>
         <p>
@@ -213,41 +213,6 @@
               <li><a href="#industry_project">Industry projects</a></li>
             </ul>
             <section id="first-tab-group" class="tabgroup">
-              <!-- <div id="research_project">
-                <ul>
-                  <li>
-                    <div class="item">
-                      <img src="img/project/left_deep_join_tree.jpg" alt="">
-                      <div class="text-content">
-                        <h4>SQL Query Plan Optimization</h4>
-                        <span>Oct 2020 - Dec 2020</span>
-                        <p>In this project, we develop a greedy algorithm to reorder <em>left-deep-join tree</em> in SQL
-                          query plan, and achieved better performance.</p>
-                        <div class="accent-button button">
-                          <a href="https://zsb.ustc.edu.cn/2021/0323/c12990a477204/pagem.htm" target="_blank">News</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="item">
-                      <img src="img/project/gdbfs.png" alt="">
-                      <div class="text-content">
-                        <h4>Graph DataBase File System</h4>
-                        <span>March 2019 - July 2019</span>
-                        <p>We utilize <em>Neo4j</em>(one of the best graph database) to build a <em>FUSE</em>-based file
-                          system with a fantastic web UI.</p>
-                        <div class="accent-button">
-                          <a href="https://github.com/USTC-CS-Course-Resource/GDBFS/blob/bdb3fa436be9e80d13554c340c1680f3dac2b2ee/report/%E7%BB%93%E9%A2%98%E6%8A%A5%E5%91%8A.md"
-                            target="_blank" class="button">Report</a>
-                          <a href="https://github.com/USTC-CS-Course-Resource/GDBFS/tree/bdb3fa436be9e80d13554c340c1680f3dac2b2ee"
-                            target="_blank" class="button">Code</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div> -->
               <div id="tab1">
                 <ul>
                   <li>
@@ -279,67 +244,77 @@
                   </li>
                   <li>
                     <div class="item">
-                      <img src="img/dir.jpg" alt="" style="width:35%;height:100%">
+                      <img src="img/research/afcm.jpg" alt="" style="width:35%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>Efficient and Consistent NVMM Cache for SSD-based File Syst</h4>
+                        <h4>Efficient and Consistent NVMM Cache for SSD-based File System</h4>
                         <span>
                           <w style="color:rgb(161, 0, 0);"> <b>TC 2018.</b></w><br>
                           <w style="color:rgb(0, 0, 0);">Youmin Chen, Youyou Lu, <em>Pei Chen</em>, Jiwu Shu.</w>
                           
                         </span>
                         <p>
-                          <b>Task</b>: Graph classification.<br>
-                          <b>What</b>: An invariant learning algorithm for GNNs.<br>
-                          <b>Motivation</b>: GNNs mostly fail to generalize to OOD datasets and provide interpretations.<br>
-                          <b>Insight</b>: We construct interventional distributions as "multiple eyes" to discover the features that make the label invarian (i.e., causal features).<br>
-                          <b>Benefits</b>: Intrinsic interpretable GNNs that are robust and generalizable to OOD datasets. </p>
+                          <b>What</b>: Use persistent memory as SSD cache.<br>
+                          <b>Motivation</b>: Using persistent memory as SSD cache can reduce the data persistence overhead, 
+                          but the existing cache construction method does not consider the workload characteristics 
+                          and cannot give full play to the hardware performance.<br>
+                          <b>How</b>: Build adaptive cache management (AFCM) combining pages and cache lines, 
+                          which reduces the data write amplification of coarse-grained cache management (SCCM), 
+                          and eliminates the cache index overhead caused by the fine-grained cache management (SFCM) with the granularity of the cache line. 
+                          Designed copy-on-write (TCOW) mechanism to ensure the crash consistency of NVMM cache space and file system mirroring.<br>
+                          <b>Benefits</b>: The performance of AFCM is 83% higher than that of SCCM, and the write operation to SSD is reduced by 63%. </p>
                         <div class="accent-button">
-                          <a href="https://arxiv.org/abs/2201.12872" target="_blank" class="button">Paper</a>
-                          <a href="https://github.com/Wuyxin/DIR-GNN" target="_blank" class="button">Code</a>
-                          <a href="https://www.youtube.com/watch?v=9d0eXaO_kOw" target="_blank" class="button">Video</a>
-                          <a href="https://cs.stanford.edu/~shirwu/slides/dir-iclr22.pdf" target="_blank" class="button">Slides</a>
+                          <a href="https://drive.google.com/file/d/1Bi2RglUQzZX-s7xvZuxPhzcW_cymqBxV/view" target="_blank" class="button">Paper</a>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="item">
-                      <img src="img/rgcl2.jpg" alt="" style="width:35%;height:100%">
+                      <img src="img/research/dpalloc.jpg" alt="" style="width:35%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>Let Invariant Rationale Discovery Inspire Graph Contrastive Learning</h4>
+                        <h4>A global address space management method for distributed persistent memory</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>ICML 2022.</b></w><br>
-                          <w style="color:rgb(0, 0, 0);">Sihang Li, Xiang Wang, An Zhang, <b>Ying-Xin Wu</b>, Xiangnan He and Tat-Seng Chua</w>
+                          <w style="color:rgb(161, 0, 0);"> <b>Patent No: CN111241011A.</b></w><br>
+                          <w style="color:rgb(0, 0, 0);">Jiwu Shu, Youmin Chen, Qing Wang, <b>Pei Chen</b>, Youyou Lu</w>
                         </span>
                         <p>
-                          <b>Task</b>: Graph classification.<br>
-                          <b>What</b>: A graph contrastive learning (GCL) method with model interpretations.<br>
-                          <b>How</b>: We generate rationale-aware graphs for contrastive learning to achieve better transferability. 
+                          <b>What</b>: Adress space management for distributed persistent memory.<br>
+                          <b>Motivation</b>: 	It is essential to build a distributed persistent memory allocator with high availability, 
+                          high performance and crash consistency, 
+                          but the existing persistent memory allocator cannot satisfy the above characteristics at the same time.<br>
+                          <b>How</b>: Use a centralized monitor to manage the node and address mapping information in the cluster. 
+                          Use the raft protocol to ensure the high availability of the monitor. 
+                          Use the primary backup protocol to ensure the high availability of the data. 
+                          Build a thread-isolated address mapping table and batch processing strategy to improve access to metadata server performance.
+                          Use the state machine mechanism inside the local allocator, 
+                          and use the two-phase commit method to ensure the atomicity of address allocation. 
+                          Design a lock-free data structure for address allocation 
                         </p>
                         <div class="accent-button">
-                          <a href="https://arxiv.org/pdf/2206.07869.pdf" target="_blank" class="button">Paper</a>
-                          <a href="https://github.com/lsh0520/RGCL" target="_blank" class="button">Code</a>
+                          <a href="https://patentimages.storage.googleapis.com/c5/f1/98/937dac940992c9/CN104598393A.pdf" target="_blank" class="button">Link</a>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="item">
-                      <img src="img/kgmlv2.jpg" alt="" style="width:35%;height:100%">
+                      <img src="img/research/rdma.jpg" alt="" style="width:35%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>Knowledge-Aware Meta-learning for Low-Resource Text Classification</h4>
+                        <h4>A memory communication method and device based on RDMA</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>EMNLP (Oral) 2021.</b> Short Paper.</w><br>
-                          <w style="color:rgb(0, 0, 0);">Huaxiu Yao, <b>Ying-Xin Wu</b>, Maruan Al-Shedivat, Eric P. Xing.</w>
+                          <w style="color:rgb(161, 0, 0);"> <b>Patent No: CN111858418A.</b></w><br>
+                          <w style="color:rgb(0, 0, 0);">Youyou Lu, Jiwu Shu, Youmin Chen, <b>Pei Chen</b>, Jun Xu, Peng Lin.</w>
                         </span>
                         <p> 
-                          <b>Task</b>: Text classification.<br>
-                          <b>What</b>: A meta-learning algorithm for low-resource text classification problem.<br>
-                          <b>How</b>: We extract sentence-specific subgraphs from a knowledge graph for training.<br>
-                          <b>Benefits</b>: Better generalization between meta-training and meta-testing tasks.
+                          <b>What</b>: Adress space management for distributed persistent memory.<br>
+                          <b>Motivation</b>: RDMA suffers performance collapse when transferring data to an increasing number of clients on reliable connection 
+                          because of resource contention in the CPU cache.<br>
+                          <b>How</b>: Deliver scalable performance based on RC RDMA. 
+                          It achieves so by grouping and rating the network connections, 
+                          so as to balance the saturation and thrashing of the cache space.
                         </p>
                         <div class="accent-button">
-                          <a href="https://arxiv.org/abs/2109.04707" target="_blank" class="button">Paper</a>
+                          <a href="http://www.ipfeibiao.com/patent/pdfview/2019103640144.html" target="_blank" class="button">Link</a>
                         </div>
                       </div>
                     </div>
@@ -350,108 +325,95 @@
                 <ul>
                   <li>
                     <div class="item">
-                      <img src="img/research/SNlog.jpg" alt="" style="width:32%;height:100%">
+                      <img src="img/industry/vectorEngine.jpg" alt="" style="width:32%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>SNlog: A SmartNIC-driven shared log</h4>
+                        <h4>Indroduce vector engine of ClickHouse into MySQL</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>Preprint.</b></w><br>
-                          <w style="color:rgb(0, 0, 0);"><em>Pei Chen</em>, Youyou Lu, Qing Wang, Junru Li, Jiwu Shu.</w>
+                          <w style="color:rgb(161, 0, 0);"> <b>Research Intern.</b>&emsp;&emsp;&emsp;&emsp;   Jan 2022 - April 2022 </w><br>
+                          <w style="color:rgb(0, 115, 161);">ByteDance Corp · Beijing</w>
                           
                         </span>
                         <p>
-                          <b>What</b>: A disaggregated shared log system that offloads log operations to emerging SmartNICs.<br>
-                          <b>Benefits</b>: Better throughput compared to existing log systems, 
-                          without consuming significant computational resources on the server side.
-                           and fully utilizing the bandwidth of raw SSD devices. <br> 
-                          <b>How</b>:  Leverage the ARM-based Mellanox BlueField-2 SmartNIC, direct read and write operations to flash storage devices are performed.
-                          Propose techniques include delayed persistence log management, efficient concurrency control mechanisms 
-                          and a replica protocol separates metadata and data.
-                           A two-level mapping mechanism enhances log read performance and addresses the limited memory challenge of SmartNICs. 
-                          RDMA is utilized for data transmission, minimizing message copying. 
+                          <b>What</b>: Designed and implemented a c++ source code MysqlExecutor 
+                          by imitating ScanExecutor of ClickHouse to support ByteNDB storage. 
+                          Developed a presentation of the new schema and drafted a list of C++ classes 
+                          that needs to be modified to support ByteNDB storage.
                           </p>
                         <div class="accent-button">
-                          <a target="_blank">Under Submission</a>
+                          <a href="https://www.volcengine.com/product/vedb-mysql" target="_blank" class="button">Link</a>
+                          
                         </div>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="item">
-                      <img src="img/research/SNlog.jpg" alt="" style="width:32%;height:100%">
+                      <img src="img/industry/rocksdb.jpg" alt="" style="width:32%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>SNlog: A SmartNIC-driven shared log</h4>
+                        <h4>Optimization of Local Storage Read Performance and Reliability for Cloud Storage Metadata</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>Preprint.</b></w><br>
-                          <w style="color:rgb(0, 0, 0);"><em>Pei Chen</em>, Youyou Lu, Qing Wang, Junru Li, Jiwu Shu.</w>
+                          <w style="color:rgb(161, 0, 0);"> <b>Senior Software Engineer.</b>&emsp;&emsp;&emsp;&emsp;   May 2022 - Sep 2022 </w><br>
+                          <w style="color:rgb(0, 115, 161);">Huawei Cloud Corp · Beijing</w>
                           
                         </span>
                         <p>
-                          <b>What</b>: A disaggregated shared log system that offloads log operations to emerging SmartNICs.<br>
-                          <b>Benefits</b>: Better throughput compared to existing log systems, 
-                          without consuming significant computational resources on the server side.
-                           and fully utilizing the bandwidth of raw SSD devices. <br> 
-                          <b>How</b>:  Leverage the ARM-based Mellanox BlueField-2 SmartNIC, direct read and write operations to flash storage devices are performed.
-                          Propose techniques include delayed persistence log management, efficient concurrency control mechanisms 
-                          and a replica protocol separates metadata and data.
-                           A two-level mapping mechanism enhances log read performance and addresses the limited memory challenge of SmartNICs. 
-                          RDMA is utilized for data transmission, minimizing message copying. 
+                          <b>What</b>: Improving point-lookup using data block hash index. 
+                          . Do some basic consistency checks to LSM-tree<br>
+                          <b>Benefits</b>: Seek is reduced by 21.8% and the overall throughput is increased by 10% at an overhead of 4.6% more space.
+                          . Do some basic consistency checks to LSM-tree<br>
                           </p>
                         <div class="accent-button">
-                          <a target="_blank">Under Submission</a>
+                          <a target="_blank">Link</a>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div class="item">
-                      <img src="img/research/SNlog.jpg" alt="" style="width:32%;height:100%">
+                      <img src="img/industry/mongodb.jpg" alt="" style="width:32%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>SNlog: A SmartNIC-driven shared log</h4>
+                        <h4>Scalability and Reliability Optimization of Cloud Storage Metadata Based on MongoDB</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>Preprint.</b></w><br>
-                          <w style="color:rgb(0, 0, 0);"><em>Pei Chen</em>, Youyou Lu, Qing Wang, Junru Li, Jiwu Shu.</w>
+                          <w style="color:rgb(161, 0, 0);"> <b>Senior Software Engineer.</b>&emsp;&emsp;&emsp;&emsp;   Oct 2022 - June 2023 </w><br>
+                          <w style="color:rgb(0, 115, 161);">Huawei Cloud Corp · Beijing</w>
                           
                         </span>
                         <p>
-                          <b>What</b>: A disaggregated shared log system that offloads log operations to emerging SmartNICs.<br>
-                          <b>Benefits</b>: Better throughput compared to existing log systems, 
-                          without consuming significant computational resources on the server side.
-                           and fully utilizing the bandwidth of raw SSD devices. <br> 
-                          <b>How</b>:  Leverage the ARM-based Mellanox BlueField-2 SmartNIC, direct read and write operations to flash storage devices are performed.
-                          Propose techniques include delayed persistence log management, efficient concurrency control mechanisms 
-                          and a replica protocol separates metadata and data.
-                           A two-level mapping mechanism enhances log read performance and addresses the limited memory challenge of SmartNICs. 
-                          RDMA is utilized for data transmission, minimizing message copying. 
+                          <b>What</b>:Reliable routing point lookup strategy based on MongoDB, 
+                          reducing cloud storage metadata access failure duration from 30 minutes to 30 seconds.           
+                          MongoDB-based route scalability optimization, 
+                          eliminating invalid routes and 2 orders of magnitude reduction in access latency.
+                          In-place assign based on MongoDB chunk, reducing blast radius, improving chunk takeover failure SLA 
+                          from 96% to 99.99%.
                           </p>
                         <div class="accent-button">
-                          <a target="_blank">Under Submission</a>
+                          <a href="https://support.huaweicloud.com/intl/en-us/productdesc-obs/en-us_topic_0045853681.html" target="_blank" class="button">Link</a>
+                         
                         </div>
                       </div>
                     </div>
                   </li>
+                  
                   <li>
                     <div class="item">
-                      <img src="img/research/SNlog.jpg" alt="" style="width:32%;height:100%">
+                      <img src="img/industry/lifecycle.png" alt="" style="width:32%;height:100%">
                       <div class="text-content" style="width:64%">
-                        <h4>SNlog: A SmartNIC-driven shared log</h4>
+                        <h4>Building a Columnar Analytical Engine Based on Object Storage LifeCycle Service</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>Preprint.</b></w><br>
-                          <w style="color:rgb(0, 0, 0);"><em>Pei Chen</em>, Youyou Lu, Qing Wang, Junru Li, Jiwu Shu.</w>
+                          <w style="color:rgb(161, 0, 0);"> <b>Senior Software Engineer.</b>&emsp;&emsp;&emsp;&emsp;   July 2022 - Present</w><br>
+                          <w style="color:rgb(0, 115, 161);">Huawei Cloud Corp · Beijing</w>
                           
                         </span>
                         <p>
-                          <b>What</b>: A disaggregated shared log system that offloads log operations to emerging SmartNICs.<br>
-                          <b>Benefits</b>: Better throughput compared to existing log systems, 
-                          without consuming significant computational resources on the server side.
-                           and fully utilizing the bandwidth of raw SSD devices. <br> 
-                          <b>How</b>:  Leverage the ARM-based Mellanox BlueField-2 SmartNIC, direct read and write operations to flash storage devices are performed.
-                          Propose techniques include delayed persistence log management, efficient concurrency control mechanisms 
-                          and a replica protocol separates metadata and data.
-                           A two-level mapping mechanism enhances log read performance and addresses the limited memory challenge of SmartNICs. 
-                          RDMA is utilized for data transmission, minimizing message copying. 
+                          <b>What</b>: Designed and implemented a Java source code MergeEngine for Object Life cycle 
+                          on internal object metadata and version field. 
+                          Eliminating the secondary index for Object Life cycle, in order to improve object storage scalability.         
+                          Developed a presentation of the new architecture and drafted a list of C++ features
+                          that were not yet properly supported by the existing source inlining pipeline.
                           </p>
                         <div class="accent-button">
-                          <a target="_blank">Under Submission</a>
+                          <a href="https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0425.html" target="_blank" class="button">Link</a>
+                          
                         </div>
                       </div>
                     </div>
