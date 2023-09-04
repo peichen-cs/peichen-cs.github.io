@@ -124,6 +124,7 @@
         <p>
           I am a senior software engineer in Huawei Cloud Computing Technology Ltd, Beijing. 
           I am working on improving metadata performance of file and object storage systems in cloud computing.
+          
         </p>
         <p>
           <!-- I recently graduated with a Master of Science from Tsinghua University studying distributed systems and storage systems 
@@ -141,6 +142,9 @@
           Previously, I obtained my B.S. in Computer Science at <a href="https://www.csu.edu.cn/" target="_blank">Central South University(CSU)</a>, 
           advised by Professor <a href="https://faculty.csu.edu.cn/wangweiping/zh_CN/index.htm" target="_blank">Weiping Wang</a>.
           
+        </p>
+        <p>
+          Please find my <a href="img/pdf/chenpei_resume_ivy.pdf" target="_blank">CV</a> here.
         </p>
         <p>
           <a href="https://github.com/peichen-cs"><i class="fa fa-github"></i> GitHub</a>&emsp;&emsp;&emsp;&emsp;
@@ -279,7 +283,7 @@
                         </span>
                         <p>
                           <b>What</b>: Adress space management for distributed persistent memory.<br>
-                          <b>Motivation</b>: 	It is essential to build a distributed persistent memory allocator with high availability, 
+                          <b>Motivation</b>: It is essential to build a distributed persistent memory allocator with high availability, 
                           high performance and crash consistency, 
                           but the existing persistent memory allocator cannot satisfy the above characteristics at the same time.<br>
                           <b>How</b>: Use a centralized monitor to manage the node and address mapping information in the cluster. 
@@ -306,12 +310,18 @@
                           <w style="color:rgb(0, 0, 0);">Youyou Lu, Jiwu Shu, Youmin Chen, <b>Pei Chen</b>, Jun Xu, Peng Lin.</w>
                         </span>
                         <p> 
-                          <b>What</b>: Adress space management for distributed persistent memory.<br>
+                          <b>What</b>: Deliver scalable performance on RC RDMA.<br>
                           <b>Motivation</b>: RDMA suffers performance collapse when transferring data to an increasing number of clients on reliable connection 
                           because of resource contention in the CPU cache.<br>
                           <b>How</b>: Deliver scalable performance based on RC RDMA. 
                           It achieves so by grouping and rating the network connections, 
                           so as to balance the saturation and thrashing of the cache space.
+                          Introduced a background thread pool for efficient data storage and enhanced RDMA with strategic scheduling.
+                          Constructed a QP-isolated RDMA communication method while utilizing GPUDirect for inter-node communication, 
+                          reducing message copying overhead.
+                          Developed a background thread pool for parallel data persistence and improved RDMA scalability 
+                          through hardware resource reuse and efficient scheduling.    
+                          Achieved a write bandwidth 18\% higher than the baseline system.
                         </p>
                         <div class="accent-button">
                           <a href="http://www.ipfeibiao.com/patent/pdfview/2019103640144.html" target="_blank" class="button">Link</a>
@@ -379,12 +389,13 @@
                           
                         </span>
                         <p>
-                          <b>What</b>:Reliable routing point lookup strategy based on MongoDB, 
+                          <b>What</b>:1) Reliable routing point lookup strategy based on MongoDB, 
                           reducing cloud storage metadata access failure duration from 30 minutes to 30 seconds.           
-                          MongoDB-based route scalability optimization, 
-                          eliminating invalid routes and 2 orders of magnitude reduction in access latency.
-                          In-place assign based on MongoDB chunk, reducing blast radius, improving chunk takeover failure SLA 
-                          from 96% to 99.99%.
+                          2) MongoDB-based route scalability optimization based on mongoDB, 
+                          eliminating invalid routes, optimizing lock contention, 
+                          and reducing access latency from 10 seconds to 0.6 milliseconds, a reduction of 2 orders of magnitude
+                          3) In-place assign based on MongoDB chunk, reducing blast radius, improving chunk takeover failure SLA 
+                          from 96% to 99.99%. 
                           </p>
                         <div class="accent-button">
                           <a href="https://support.huaweicloud.com/intl/en-us/productdesc-obs/en-us_topic_0045853681.html" target="_blank" class="button">Link</a>
@@ -400,16 +411,17 @@
                       <div class="text-content" style="width:64%">
                         <h4>Building a Columnar Analytical Engine Based on Object Storage LifeCycle Service</h4>
                         <span>
-                          <w style="color:rgb(161, 0, 0);"> <b>Senior Software Engineer.</b>&emsp;&emsp;&emsp;&emsp;   July 2022 - Present</w><br>
+                          <w style="color:rgb(161, 0, 0);"> <b>Senior Software Engineer.</b>&emsp;&emsp;&emsp;&emsp;   July 2023 - Present</w><br>
                           <w style="color:rgb(0, 115, 161);">Huawei Cloud Corp · Beijing</w>
                           
                         </span>
                         <p>
-                          <b>What</b>: Designed and implemented a Java source code MergeEngine for Object Life cycle 
-                          on internal object metadata and version field. 
-                          Eliminating the secondary index for Object Life cycle, in order to improve object storage scalability.         
-                          Developed a presentation of the new architecture and drafted a list of C++ features
-                          that were not yet properly supported by the existing source inlining pipeline.
+                          <b>What</b>: Designed and implemented a Java source code MergeEngine focusing  
+                          on object metadata and version management, which can process tasks based on job style. 
+                          It Eliminated the secondary index for Object Life cycle, in order to improve object storage scalability.
+                          Meanwhile, it reduced the cycle of AP update operations from 1 day to 15 minutes.         
+                          Developed a presentation of the new architecture and drafted a list of Java features
+                          that were not yet properly supported by the existing source codes.
                           </p>
                         <div class="accent-button">
                           <a href="https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0425.html" target="_blank" class="button">Link</a>
